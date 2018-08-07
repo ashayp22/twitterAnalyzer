@@ -1,3 +1,5 @@
+Install directly from github
+
 Steps on using the twitter analyzer:
 
 1.) set the word in the streaming file and enter twitter credentials
