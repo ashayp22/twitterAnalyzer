@@ -11,4 +11,4 @@ Steps on using the twitter analyzer:
 *remember that the language used is python 3.6, and requires multiple libraries*
 *you can download the libraries using pip install*
 
-Copyright 2018, Ashay Parikh, All rights reserved.
+
