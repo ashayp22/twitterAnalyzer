@@ -222,6 +222,13 @@ def sortKeys(arr): #sorts the keys based on how many times it repeated
     return sortedV
 
 
+def plotPie(x, labels, title):
+    colors = ["red", "orange", "yellow", "green", "blue", "purple", "indigo", "pink"]
+    plt.pie(x, explode=None, labels=labels, colors=colors)
+    plt.title(title)
+    plt.show()
+
+
 def analyzeKeyword(): #main function, calls everything else
     wordText = getRelevantTweets(word) #text of relevant tweets for the word
 
@@ -251,6 +258,18 @@ def analyzeKeyword(): #main function, calls everything else
 
     for z in range(1, 11):
         print(sortedWord[len(sortedWord)-z])
+	
+    label = [];
+    values = [];
+
+    for z in range(1, 11):
+        label.append(sortedPos[len(sortedPos)-z][0])
+        values.append(sortedPos[len(sortedPos)-z][1])
+
+    print(label);
+    print(values);
+
+    plotPie(values, label, "Keywords Associated with " + word);
 
     print("done")
 
