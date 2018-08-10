@@ -262,7 +262,7 @@ def analyzeKeyword(): #main function, calls everything else
     label = [];
     values = [];
 
-    for z in range(1, 11):
+    for z in range(1, 21):
         label.append(sortedPos[len(sortedPos)-z][0])
         values.append(sortedPos[len(sortedPos)-z][1])
 
