@@ -1,3 +1,4 @@
+# Copyright (c) 2018 Ashay Parikh
 import json
 import pandas as pd
 import matplotlib.pyplot as plt
